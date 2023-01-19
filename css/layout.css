@@ -52,7 +52,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -187,7 +187,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #B22222; }
+ul#nav li.current a { color: #2248b2; }
 
 
 /* ------------------------------------------------------------------ */
@@ -195,29 +195,50 @@ ul#nav li.current a { color: #B22222; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
+   background: url(../images/snowy_flight3.jpg) no-repeat center;
    padding-top: 16px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #B22222; }
+#about a { color: #2248b2; }
+#about a:visited  { color: white; }
+#about a:hover, #about a:focus { color: #2248b2; }
+
 
 #about h2 {
    font: 22px/30px 'Montserrat', sans-serif;
-   color: #fff;
+   color: rgb(255, 255, 255);
    margin-bottom: 12px;
+
 }
 #about p {
-   line-height: 30px;
-   color: #a9a9a9;
+   padding-top: 5%;
+   font: 22px/30px , serif;
+   font-size: 25px;
+   line-height: 50px;
+   color: rgba(255, 255, 255, 0.917);
 }
 #about .profile-pic {
    position: relative;
-   width: 25%;
+   width: 40%;
    height: 25%;
    border-radius: 100%;
+
+}
+#about .upenn-pic {
+   position: relative;
+   width: 38.5%;
+   height: 25%;
+   border-radius: 100%;
+
+}
+#about .asu-pic {
+   position: relative;
+   width: 24%;
+   height: 25%;
+   border-radius: 100%;
+
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -245,7 +266,7 @@ ul#nav li.current a { color: #B22222; }
 /* ------------------------------------------------------------------ */
 
 #resume {
-   background: #fff;
+   background:#2B2B2B;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
@@ -421,17 +442,35 @@ ul#nav li.current a { color: #B22222; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   background: url(../images/snowy_flight3.jpg) no-repeat center;
    padding-top: 90px;
    padding-bottom: 60px;
 }
+
+#portfolio .technologies {
+   position:relative;
+   width: 5%;
+   height: 2%;
+}
+#portfolio .project p {
+   color: white;
+   font-size: 20px;
+   text-align: center;
+}
 #portfolio h1 {
-   font: 22px/24px 'opensans-semibold', sans-serif;
+   font: 22px/24px sans-serif;
+   font-size: 50px;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   color: rgb(255, 255, 255);
+}
+
+#portfolio h2 {
+   color: white;
+   font-size: 25px;
+   text-align: center;
 }
 
 /* Portfolio Content */
@@ -451,6 +490,8 @@ ul#nav li.current a { color: #B22222; }
    display: block;
    cursor: pointer;
 }
+
+
 
 /* overlay */
 .portfolio-item .item-wrap .overlay {
